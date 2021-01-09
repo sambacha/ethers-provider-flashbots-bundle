@@ -19,7 +19,8 @@
     "@typescript-eslint/parser": "^4.9.1",
     "eslint": "^7.15.0",
     "ethers": "^5.0.23",
-    "typedoc": "^0.20.13"
+    "typedoc": "^0.20.13",
+    "typedoc-twilio-theme": "^1.0.1"
   },
   "peerDependencies": {
     "ethers": "^5.0.23"
