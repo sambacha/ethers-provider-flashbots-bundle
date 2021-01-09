@@ -8,7 +8,8 @@
     "demo": "npx ts-node --project tsconfig.json src/demo.ts",
     "build": "npx tsc",
     "prepare": "npm run build",
-    "lint": "npx eslint src"
+    "lint": "npx eslint src",
+    "docs": "./node_modules/.bin/typedoc src/"
   },
   "author": "Flashbot Contributors",
   "license": "MIT",
@@ -17,7 +18,8 @@
     "@typescript-eslint/eslint-plugin": "^4.9.1",
     "@typescript-eslint/parser": "^4.9.1",
     "eslint": "^7.15.0",
-    "ethers": "^5.0.23"
+    "ethers": "^5.0.23",
+    "typedoc": "^0.20.13"
   },
   "peerDependencies": {
     "ethers": "^5.0.23"

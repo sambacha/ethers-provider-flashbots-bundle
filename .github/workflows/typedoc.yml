@@ -26,7 +26,7 @@ jobs:
         run: yarn run build
 
       - name: Generate typedoc
-        run: npm install --global typedoc && typedoc --mode file --out docs/  src/
+        run: yarn run docs
 
       - name: Publish to GitHub Pages
         uses: ./

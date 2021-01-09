@@ -1,5 +1,9 @@
 # ethers-provider-flashbots-bundle
 
+![nodejs](https://github.com/sambacha/ethers-provider-flashbots-bundle/workflows/nodejs/badge.svg)
+![lint](https://github.com/sambacha/ethers-provider-flashbots-bundle/workflows/lint/badge.svg)
+![typedoc](https://github.com/sambacha/ethers-provider-flashbots-bundle/workflows/typedoc/badge.svg)
+
 Contains the `FlashbotsBundleProvider` ethers.js provider to provide high-level access to eth_sendBundle rpc endpoint.
 
 Flashbots-enabled relays and miners will expose a single jsonrpc endpoint: `eth_sendBundle`. Since this is a brand-new, non-standard endpoint, ethers.js and other libraries do not natively support these requests (like `getTransactionCount`). In order to interact with `eth_sendBundle`, you will also need access to another full-featured endpoint for nonce-calculation, gas estimation, and transaction status.
