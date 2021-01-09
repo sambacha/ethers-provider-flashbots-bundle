@@ -20,10 +20,10 @@ jobs:
           node-version: '12.x'
 
       - name: Install dependencies
-        run: npm install 
+        run: yarn install 
 
       - name: Build
-        run: npm build 
+        run: yarn run build
 
       - name: Generate typedoc
         run: npm install --global typedoc && typedoc --mode file --out docs/  src/
