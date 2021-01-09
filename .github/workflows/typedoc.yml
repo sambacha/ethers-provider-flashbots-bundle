@@ -1,0 +1,36 @@
+name: typedoc
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'src/**'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: Install dependencies
+        run: npm install 
+
+      - name: Build
+        run: npm build 
+
+      - name: Generate typedoc
+        run: npm install --global typedoc && typedoc --mode file --out docs/  src/
+
+      - name: Publish to GitHub Pages
+        uses: ./
+        with:
+          dir: docs
+          branch: gh-pages
+          token: ${{ secrets.ACCESS_TOKEN }}
