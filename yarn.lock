@@ -1587,6 +1587,11 @@ typedoc-default-themes@0.12.0:
   resolved "https://registry.yarnpkg.com/typedoc-default-themes/-/typedoc-default-themes-0.12.0.tgz#42451948e55a148c1350eb2aa68829be5c2b06b3"
   integrity sha512-0hHBxwmfxE0rkIslOiO39fJyYwaScQEhUIxcpqx3uS1BL3zhFW5oQfUaPx2cv2XLL/GXhYFxhdFLoVmNptbxEQ==
 
+typedoc-twilio-theme@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/typedoc-twilio-theme/-/typedoc-twilio-theme-1.0.1.tgz#cf42c03c6e45a989aec0cc26e59b3c5f70d60dab"
+  integrity sha512-9cT7fli3+1x0CcQvavenemzjpEh9jOG93Dr9j8vqmI6BBjBA22cUsAVoYYSwu0E/nOJOKWxYqtfM4t2qHi8QMA==
+
 typedoc@^0.20.13:
   version "0.20.13"
   resolved "https://registry.yarnpkg.com/typedoc/-/typedoc-0.20.13.tgz#9d56df76d0b421a71a33336dc64b1a466dc8f2fd"
