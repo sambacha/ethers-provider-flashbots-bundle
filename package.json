@@ -1,7 +1,7 @@
 {
   "name": "@flashbots/ethers-provider-bundle",
   "version": "0.0.4",
-  "description": "Flashbots Etherjs Provider",
+  "description": "Provider build for MEV",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
@@ -9,10 +9,10 @@
     "build": "npx tsc",
     "prepare": "npm run build",
     "lint": "npx eslint src",
-    "docs": "./node_modules/.bin/typedoc src/"
+    "docs": "typedoc --mode file --out docs/ src/"
   },
-  "author": "Flashbot Contributors",
-  "license": "MIT",
+  "author": "SEE CONTRIBUTORS",
+  "license": "ISC",
   "devDependencies": {
     "@types/node": "^14.14.10",
     "@typescript-eslint/eslint-plugin": "^4.9.1",
