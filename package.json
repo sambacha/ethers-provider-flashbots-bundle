@@ -1,7 +1,7 @@
 {
   "name": "@flashbots/ethers-provider-bundle",
   "version": "0.4.0",
-  "description": "",
+  "description": "Flashbots EtherJS Provider",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "repository": {
@@ -15,8 +15,9 @@
     "prepare": "npm run clean && npm run build",
     "lint": "npx eslint src"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": ["mev", "flashbots", "ethereum", "front running", "back running"],
+  "author": "Flashbots Contributors",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^14.14.10",
     "@typescript-eslint/eslint-plugin": "^4.28.5",
